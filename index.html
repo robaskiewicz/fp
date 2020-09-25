@@ -1,0 +1,2504 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/fp-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+
+>
+
+  <title>Fpac</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class='row mt-3'>
+      <div class='col-lg-3 col-sm-12 p-0 m-0'>
+        <div class="menu">
+          <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action" style="background-color: #DDDDDD;">
+              <b>Guia de uso</b>
+            </a>
+            <a href="#instalacao" class="list-group-item list-group-item-action">Instalação</a>
+            <a href="#cores" class="list-group-item list-group-item-action">Cores</a>
+            <a href="#tamanhos" class="list-group-item list-group-item-action">Tamanhos</a>
+            <a href="#efeitoAcoes" class="list-group-item list-group-item-action">Efeitos e Ações</a>
+            <a href="#exemplos" class="list-group-item list-group-item-action">Exemplos</a>
+            <a href="#bootstrap" class="list-group-item list-group-item-action">Exemplos com Bootstrap</a>
+            <a href="#personalizacao" class="list-group-item list-group-item-action">Personalização</a>
+            <a href="#todosIcones" class="list-group-item list-group-item-action">Ícones</a>
+          </div>
+          <div class="text-center">
+            <p class="mt-3 text-center font-weight-bold" style="font-size:12px; color:#BBBBBB;">Create by Michel
+            Robaskiewicz</p>
+            <p class="mt-3 text-center font-weight-bold" style="font-size:12px; color:#BBBBBB;"><img
+              src="https://images.emojiterra.com/twitter/v12/512px/1f1e7-1f1f7.png" width="15px"
+              class="mr-2">Brazil code</p>
+              <div class="badge badge-fp-color-fp-color-dark text-wrap" style="width: 6rem;">
+                Versão 1.0
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='col-lg-9 col-sm-12 mb-5 text-justify'>
+          <h2 id="instalacao">Instalação</h2>
+          <p>
+            A instalação da biblioteca é simples, basta baixar o pack da ferramenta e realizar a implementação no
+            projeto. Comece pela importação do CSS por meio da tag <code>&lt;link&gt;</code> dentro das tags <code>&lt;head&gt;...&lt;/head&gt;</code>.
+          </p>
+
+
+          <code>
+            &lt;head&gt;<br>
+            &nbsp; &nbsp; ...<br>
+            &nbsp; &nbsp; &lt;link rel="stylesheet" type="text/css" href="fp-icons.css"&gt;<br>
+            &nbsp; &nbsp; ... <br>
+            &lt;/head&gt;
+          </code>
+
+
+          <p class="mt-4">
+            Após a importação da folha de estilo os ícones já estão prontos para ser utilizados, para isso é
+            necessário criar uma tag <code>&lt;i&gt;</code> com as classes <b>fp</b> e <b>fp-nome</b>, em que <b>nome</b>
+            representa o nome do ícone. O código abaixo é necessário para adicionar o ícone "blabla":
+          </p>
+
+
+          <h4 class="mt-5" id="cores">Cores</h4>
+
+          <p>
+            As cores disponibilizadas como padrão são baseadas no <i>Bootstrap</i> que oferece uma ampla gama de
+            cores simpáticas e atraentes. Elas podem ser alteradas ao inserir a classe <b>fp-color-nome</b> com a
+            cor desejada na tag <code>&lt;i&gt;</code>. O código a seguir demonstra como seria uma implementação de
+            um ícone com cor azul:
+          </p>
+          <code>
+            &lt;i class="fp fp-heart primary"&gt;&lt;/i&gt;
+          </code>
+
+          <div class="row p-5">
+            <div class=" col-12 d-inline">
+              <div class="d-inline-block p-3 text-center">
+                <div class="box bg-primary rounded"></div>
+                <span style="font-size: 12px; font-weight: bold;" class="text-center">fp-color-primary</span>
+              </div>
+
+              <div class="d-inline-block p-3 text-center">
+                <div class="box bg-secondary rounded"></div>
+                <span style="font-size: 12px; font-weight: bold;" class="text-center">fp-color-secondary</span>
+              </div>
+
+              <div class="d-inline-block p-3">
+                <div class="box bg-success rounded"></div>
+                <span style="font-size: 12px; font-weight: bold;" class="text-center">fp-color-secondary</span>
+              </div>
+
+              <div class="d-inline-block p-3">
+                <div class="box bg-danger rounded"></div>
+                <span style="font-size: 12px; font-weight: bold;" class="text-center">fp-color-danger</span>
+              </div>
+
+              <div class="d-inline-block p-3">
+                <div class="box bg-warning rounded"></div>
+                <span style="font-size: 12px; font-weight: bold;" class="text-center">fp-color-warning</span>
+              </div>
+
+              <div class="d-inline-block p-3">
+                <div class="box bg-info rounded"></div>
+                <span style="font-size: 12px; font-weight: bold;" class="text-center">fp-color-info</span>
+              </div>
+
+              <div class="d-inline-block p-3">
+                <div class="box bg-light rounded" style="border:solid 1px #DDDDDD;"></div>
+                <span style="font-size: 12px; font-weight: bold;" class="text-center">fp-color-light</span>
+              </div>
+
+              <div class="d-inline-block p-3">
+                <div class="box bg-dark rounded"></div>
+                <span style="font-size: 12px; font-weight: bold;" class="text-center">fp-color-dark</span>
+              </div>
+            </div>
+          </div>
+
+
+          <h4 class="mt-5" id="tamanhos">Tamanhos</h4>
+
+          <p>
+            Para aumentar um ícone chame pela classe <b>fp-size-tamanho</b>. Assim, o ícone utilizado poderá ficar
+            no tamanho inserido. Além dessa variedade de tamanhos é possível realizar a personalização própria
+            através do CSS. O código abaixo demostra como colocar um ícone com o tamanho 2:
+          </p>
+
+          <code>&lt;i class="fp fp-github fp-fp-size-2"&gt;&lt;/i&gt;</code>
+
+
+          <div class="row">
+            <div class="col-12">
+
+              <div class="d-inline-block p-2 text-center">
+                <i class="fp-github"></i><br>
+                <span style="font-size: 12px; font-weight: bold;" class="text-center">normal</span>
+              </div>
+
+              <div class="d-inline-block p-2 text-center">
+                <i class="fp-github fp-size-2"></i><br>
+                <span style="font-size: 12px; font-weight: bold;" class="text-center">fp-size-2</span>
+              </div>
+
+              <div class="d-inline-block p-2 text-center">
+                <i class="fp-github fp-size-3"></i><br>
+                <span style="font-size: 12px; font-weight: bold;" class="text-center">fp-size-3</span>
+              </div>
+
+              <div class="d-inline-block p-2 text-center">
+                <i class="fp-github fp-size-4"></i><br>
+                <span style="font-size: 12px; font-weight: bold;" class="text-center">fp-size-4</span>
+              </div>
+
+              <div class="d-inline-block p-2 text-center">
+                <i class="fp-github fp-size-5"></i><br>
+                <span style="font-size: 12px; font-weight: bold;" class="text-center">fp-size-5</span>
+              </div>
+
+              <div class="d-inline-block p-2 text-center">
+                <i class="fp-github fp-size-6"></i><br>
+                <span style="font-size: 12px; font-weight: bold;" class="text-center">fp-size-6</span>
+              </div>
+
+              <div class="d-inline-block p-2 text-center">
+                <i class="fp-github fp-size-7"></i><br>
+                <span style="font-size: 12px; font-weight: bold;" class="text-center">fp-size-7</span>
+              </div>
+
+              <div class="d-inline-block p-2 text-center">
+                <i class="fp-github fp-size-8"></i><br>
+                <span style="font-size: 12px; font-weight: bold;" class="text-center">fp-size-8</span>
+              </div>
+
+
+            </div>
+          </div>
+
+
+          <h4 class="mt-5" id="efeitoAcoes">Efeitos e Ações</h4>
+
+          <h6 class="mt-4">Rotacionar</h6>
+
+          <p>
+            As animações possibilitam com que os ícones interajam com algumas animações na tela onde serão
+            aplicados, como girar ou pulsar. No total há seis rotações disponíveis, mas, assim como as cores, o
+            desenvolvedor também tem a possibilidade de utilizar alguma outra que desejar. A classe
+            <b>rorate-angulo</b> aplica os ângulos disponíveis e o código a seguir demostra como girar o ícone a 90
+            graus.
+            <p>
+              <code>&lt;i class="fp fp-pac fp-rotate-90"&gt;&lt;/i&gt;</code>
+
+              <div class="col-12 mx-auto">
+                <i class="fp fp-pac fp-fp-size-2 mt-2"></i> normal<br>
+                <i class="fp fp-pac fp-rotate-90 fp-fp-size-2 mt-2"></i> fa-rotate-90<br>
+                <i class="fp fp-pac fp-rotate-180 fp-fp-size-2 mt-2"></i> fa-rotate-180<br>
+                <i class="fp fp-pac fp-rotate-270 fp-fp-size-2 mt-2"></i> fa-rotate-270<br>
+                <i class="fp fp-pac fp-rotate-horizontal fp-fp-size-2 mt-2"></i> fa-flip-horizontal<br>
+                <i class="fp fp-pac fp-rotate-vertical fp-fp-size-2 mt-2 mb-5"></i> fa-flip-vertical
+
+              </div>
+
+
+              <h6 class="mt-4">Piscar</h6>
+
+              <code>&lt;i class="fp fp-heart fp-size-4 fp-blink fp-infinite danger"&gt;&lt;/i&gt;</code><br><br>
+
+              <div class="row mx-auto">
+                <div class="col-2"><i class="fp-heart fp-size-4 fp-blink danger"></i>
+                  <p>fp-blink</p></div>
+                  <div class="col-2"><i class="fp-heart fp-size-4 fp-blink fp-infinite danger"></i>
+                    <p>fp-blink fp-infinite</p></div>
+                  </div>
+
+
+                  <h6 class="mt-4">Vibrar</h6>
+
+                  <div class="row mx-auto">
+                    <div class="col-2">
+                      <i class="fp-heart fp-size-4 fp-vibrate danger"></i>
+                      <p>fp-vibrate</p>
+                    </div>
+                    <div class="col-3">
+                      <i class="fp-heart fp-size-4 fp-vibrate fp-infinite danger"></i>
+                      <p>fp-vibrate fp-infinite</p>
+                    </div>
+                  </div>
+
+                  <h6 class="mt-4">Swing</h6>
+                  <div class="row mx-auto">
+                    <div class="col-2">
+                      <i class="fp-pac fp-size-4 fp-swing danger"></i>
+                      <p>fp-swing</p>
+                    </div>
+
+                  </div>
+
+
+                  <h6 class="mt-5">Grow</h6>
+                  <div class="row mx-auto">
+                    <div class="col-2">
+                      <i class="fp-pac fp-size-4 fp-grow success"></i>
+                      <p>fp-grow</p>
+                    </div>
+                  </div>
+
+                  <h6 class="mt-5">Hover</h6>
+                  <div class="row mx-auto">
+                    <div class="col-2">
+                      <i class="fp-pac fp-size-3 fp-hover-primary success"></i>
+                      <p>fp-hover-primary</p>
+                    </div>
+
+                    <div class="col-2">
+                      <i class="fp-pac fp-size-3 fp-hover-secondary success"></i>
+                      <p>fp-hover-secondary</p>
+                    </div>
+
+                    <div class="col-2">
+                      <i class="fp-pac fp-size-3 fp-hover-success warning"></i>
+                      <p>fp-hover-success</p>
+                    </div>
+
+                    <div class="col-2">
+                      <i class="fp-pac fp-size-3 fp-hover-danger success"></i>
+                      <p>fp-hover-danger</p>
+                    </div>
+
+                    <div class="col-2">
+                      <i class="fp-pac fp-size-3 fp-hover-warning success"></i>
+                      <p>fp-hover-warning</p>
+                    </div>
+
+                    <div class="col-2">
+                      <i class="fp-pac fp-size-3 fp-hover-info success"></i>
+                      <p>fp-hover-info</p>
+                    </div>
+
+                    <div class="col-2" style="background-color: #DDDDDD;">
+                      <i class="fp-pac fp-size-3 fp-hover-light success"></i>
+                      <p>fp-hover-light</p>
+                    </div>
+
+                    <div class="col-2">
+                      <i class="fp-pac fp-size-3 fp-hover-fp-color-dark success"></i>
+                      <p>fp-hover-fp-color-dark</p>
+                    </div>
+                  </div>
+
+
+                  <h6 class="mt-5">Spin</h6>
+                  <div class="row mx-auto">
+
+                    <div class="col-3">
+                      <i class="fp-gear fp-size-4 fp-spin fp-infinite warning"></i>
+                      <p>fp-spin</p>
+                    </div>
+
+                    <div class="col-3">
+                      <i class="fp-gear fp-size-4 fp-spin-speed-2 warning"></i>
+                      <p>fp-spin fp-speed-2</p>
+                    </div>
+
+                    <div class="col-3">
+                      <i class="fp-gear fp-size-4 fp-spin-speed-6 warning"></i>
+                      <p>fp-spin-speed-6</p>
+                    </div>
+
+                    <div class="col-3">
+                      <i class="fp-gear fp-size-4 fp-spin-speed-8 warning"></i>
+                      <p>fp-spin-speed-8</p>
+                    </div>
+
+                  </div>
+
+                  <h6 class="mt-5">Steps</h6>
+                  <div class="row mx-auto">
+                   <div class="col-3">
+                    <i class="fp-load-circle fp-size-4 fp-steps-3 fp-infinite fp-color-dark"></i>
+                    <p>fp-steps-3 fp-infinite</p>
+                  </div>
+
+                  <div class="col-3">
+                    <i class="fp-load-circle fp-size-4 fp-steps-8 fp-infinite fp-color-dark"></i>
+                    <p>fp-steps-8 fp-infinite</p>
+                  </div>
+                </div>
+
+                <h6 class="mt-5">Fading</h6>
+                <div class="row mx-auto">
+                  <div class="col-2">
+                    <i class="fp-youtube fp-size-4 fp-fading warning"></i>
+                    <p>fp-fading </p>
+                  </div>
+                  <div class="col-3">
+                    <i class="fp-youtube fp-size-4 fp-fading fp-infinite warning"></i>
+                    <p>fp-fading fp-infinite</p>
+                  </div>
+                </div>
+
+                <h6 class="mt-5">Opacity</h6>
+                <div class="row mx-auto">
+                  <div class="col-2">
+                    <i class="fp-youtube fp-size-4 fp-opacity primary"></i>
+                    <p>fp-opacity </p>
+                  </div>
+                  <div class="col-3">
+                    <i class="fp-youtube fp-size-4 fp-opacity fp-infinite primary"></i>
+                    <p>fp-opacity fp-infinite</p>
+                  </div>
+                </div>
+
+
+                <h6 class="mt-5">Zoom</h6>
+                <div class="row mx-auto">
+                  <div class="col-3">
+                    <i class="fp-youtube fp-size-4 fp-zoom primary"></i>
+                    <p>fp-zoom </p>
+                  </div>
+                  <div class="col-4">
+                    <i class="fp-youtube fp-size-4 fp-zoom fp-infinite primary"></i>
+                    <p>fp-zoom fp-infinite</p>
+                  </div>
+                </div>
+
+
+                <h6 class="mt-5">Fade</h6>
+                <div class="row mx-auto">
+                  <div class="col-3">
+                    <i class="fp-youtube fp-size-4 fp-fade-top fp-color-fp-color-dark"></i>
+                    <p>fp-fade-top </p>
+                  </div>
+                  <div class="col-4">
+                    <i class="fp-youtube fp-size-4 fp-fade-top fp-infinite fp-color-fp-color-dark"></i>
+                    <p>fp-fade-top fp-infinite</p>
+                  </div>
+                </div>
+
+
+                <div class="row mx-auto">
+                  <div class="col-3">
+                    <i class="fp-youtube fp-size-4 fp-fade-right fp-color-fp-color-dark"></i>
+                    <p>fp-fade-right </p>
+                  </div>
+                  <div class="col-4">
+                    <i class="fp-youtube fp-size-4 fp-fade-right fp-infinite fp-color-fp-color-dark"></i>
+                    <p>fp-fade-right fp-infinite</p>
+                  </div>
+
+                </div>
+
+                <div class="row mx-auto">
+                  <div class="col-3">
+                    <i class="fp-youtube fp-size-4 fp-fade-left fp-color-fp-color-dark"></i>
+                    <p>fp-fade-left </p>
+                  </div>
+                  <div class="col-4">
+                    <i class="fp-youtube fp-size-4 fp-fade-left fp-infinite fp-color-fp-color-dark"></i>
+                    <p>fp-fade-left fp-infinite</p>
+                  </div>
+                </div>
+
+                <div class="row mx-auto">
+                  <div class="col-3">
+                    <i class="fp-youtube fp-size-4 fp-fade-bottom fp-color-fp-color-dark"></i>
+                    <p>fp-fade-bottom </p>
+                  </div>
+                  <div class="col-4">
+                    <i class="fp-youtube fp-size-4 fp-fade-bottom fp-infinite fp-color-fp-color-dark"></i>
+                    <p>fp-fade-bottom fp-infinite</p>
+                  </div>
+
+                </div>
+
+
+
+
+                <div class="row mx-auto mt-5 mb-5">
+                  <div class="col-6">
+                    <i class="fp-pac fp-size-6 fp-vibrate fp-infinite fp-color-danger mr-3"></i> 
+                    <i class="fp-circle fp-size-2 fp-blink fp-infinite fp-color-warning mr-3"></i> 
+                    <i class="fp-circle fp-size-2 fp-blink fp-infinite fp-color-warning mr-3"></i>
+                    <i class="fp-circle fp-size-2 fp-blink fp-infinite fp-color-warning mr-3"></i>
+                    <i class="fp-ghostpac fp-size-6 fp-swing fp-color-info"></i> 
+
+                  </div>
+
+                </div>
+
+
+                <h2 class="mt-5" id="exemplos">Exemplos</h2>
+
+                <h5 class="mt-4">Listas</h5>
+                <p>
+                  A personalização em listas pode ocorrer de maneira bem simples. Para isso, deve-se adicionar a classe
+                  <b>fp-ul</b> na tag <code>&lt;ul&gt;</code> e a classe <b>fp-li</b> em cada <code>&lt;li&gt;</code>
+                  dessa lista.
+                </p>
+
+                <div class="row p-5">
+                  <div class="col-12">
+                    <p>Lista simples</p>
+
+                    <ul class="fp-ul">
+                      <li><i class="fp-li fp fp-twitter-box primary"></i>List icons</li>
+                      <li><i class="fp-li fp fp-facebook-box primary"></i>can be used</li>
+                      <li><i class="fp-li fp fp-instagram danger"></i>as bullets</li>
+                    </ul>
+
+                  </div>
+
+                </div>
+
+
+                <code>
+                  &lt;ul class="fp-ul"&gt;<br>
+                  &nbsp; &lt;li&gt;&lt;i class="fp-li fp-circle">&lt;/i&gt;Seu texto&lt;/li&gt;<br>
+                  &nbsp; &lt;li&gt;&lt;i class="fp-li fp-checked">&lt;/i&gt;Seu texto&lt;/li&gt;<br>
+                  &nbsp; &lt;li&gt;&lt;i class="fp-li fp-heart">&lt;/i&gt;Seu texto&lt;/li&gt;<br>
+                  &nbsp; &lt;li&gt;&lt;i class="fp-li fp-youtube">&lt;/i&gt;Seu texto&lt;/li&gt;<br>
+                  &lt;/ul&gt;
+                </code>
+
+
+                <h5 class="mt-5">Botões</h5>
+
+                <p>
+                  A utilização em um botão também é fácil: adicione as classes <b>fp</b> e <b>fp-nome-do-icone</b> na
+                  classe no
+                  botão.
+                </p>
+
+                <code>
+                  &lt;button class="fp fp-youtube"&gt; Meu botão&lt;/button&gt;
+                </code>
+
+
+                <br>
+                <code>
+                  &lt;button class="fp fp-heart"&gt;&lt;/button&gt;
+                </code>
+
+
+                <div class="row mt-4 p-5">
+                  <div class="col-4">
+                    <p>Botão simples</p>
+                    <button class="fp-fp-size-2 fp-youtube"></button>
+                    <button class="fp fp-youtube"> Meu Botão</button>
+                  </div>
+
+                  <div class="col-4">
+                    <p>Botão Bootstrap</p>
+                    <button class="btn btn-success fp-fp-size-2 fp-youtube"></button>
+                    <button class="btn btn-success fp fp-youtube"> Meu Botão</button>
+                  </div>
+                </div>
+
+
+
+                <div id="bootstrap" class="mb-5 mt-5">
+                  <h3 id="bootstrap" class="">Outras utilizações com bootstrap</h3>
+
+                  <p class="mt-3">
+                    <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                      <icone class="fp fp-arrow-box-up fp-lg"></icone>
+                    </a>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                      <icone class="fp fp-arrow-box-up fp-lg fp-flip-vertical"></icone>
+                    </button>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                    </div>
+                  </div>
+
+
+
+
+
+                  <nav class="navbar navbar-light mt-5" style="background-color: #DDDDDD;">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <icone class="fp fp-toggler"></icone>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                          </div>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        </li>
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                      </form>
+                    </div>
+                  </nav>
+
+                  <br><br>
+                  <form class="mt-4">
+                    <div class="form-row align-items-center"> 
+                      <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInputGroup">Name</label>
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text"><icone class="fp fp-user"></icone></div>
+                          </div>
+                          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Name">
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInputGroup">Nick</label>
+                        <div class="input-group mb-2">
+                          <div class="input-group-prepend">
+                            <div class="input-group-text"><icone class="fp fp-padlock"></icone></div>
+                          </div>
+                          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Senha">
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                          <label class="form-check-label" for="autoSizingCheck">
+                            Remember me
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                      </div>
+                    </div>
+                  </form>
+
+                  <br><br>
+                  <div class="col-6 ">
+                    <p>Lista Bootstrap 4</p>
+
+                    <div class="list-group">
+                      <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fp fp-twitter-box primary"></i>
+                      Twitter</a>
+                      <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fp fp-facebook-box primary"> Facebook</i>
+                      </a>
+                      <a href="#" class="list-group-item list-group-item-action">
+                        <i class="fp fp-instagram danger"> Instagram</i>
+                      </a>
+                    </div>
+
+                  </div>
+
+                  <br><br>
+                  <button type="button" class="btn btn-primary btn-lg" style="height: 100%; overflow: visible;"><i class="fp fp-mercadopago fp-size-2 fp-lg"></i> Doar</button>
+                  <button type="button" class="btn btn-secondary btn-lg"><i class="fp fp-bcash fp-size-2 fp-lg"></i> Doar</button>
+
+                  <!--final bootstrap-->      
+                </div>
+
+
+                <h2 class="mt-5" id="personalizacao">Personalização</h2>
+
+                <p>
+                  Existe a possibilidade de personalização com outras cores e tamanhos conforme a necessidade por parte do
+                  desenvolvedor. Para colocar a cor personalizada basta criar uma nova classe em seu arquivo CSS contendo
+                  uma
+                  definição de cor e utilizar a classe personalizada na tag do ícone desejado. 
+                </p>
+
+
+
+ <input type="text" id="myInput" onkeyup="myFunction()">
+
+
+                <div id="todosIcones" class="row mt-5">
+                  <h3>Ícones</h3>
+                  <div class="col-12">
+
+
+                   
+
+
+                    <div class="box-home-icon">
+                      <i class="fp fp-men fp-size-2 fp-color-dark"></i>
+                    </div>
+
+                    <div class="box-home-icon">
+                      <i class="fp fp-woman fp-size-2 fp-color-dark"></i>
+                    </div>
+
+                    <div class="box-home-icon">
+                      <i class="fp fp-heart fp-size-2 fp-color-dark"></i>
+                    </div>
+
+                    <div class="box-home-icon">
+                      <i class="fp fp-heart-line fp-size-2 fp-color-dark"></i>
+                    </div>
+
+                    <div class="box-home-icon">
+                      <i class="fp fp-paw fp-size-2 fp-color-dark"></i>
+                    </div>
+
+                    <div class="box-home-icon">
+                      <i class="fp fp-paw-line fp-size-2 fp-color-dark"></i>
+                    </div>
+
+                    <div class="box-home-icon">
+                      <i class="fp fp-paw-circle fp-size-2 fp-color-dark"></i>
+                    </div>
+
+                    <div class="box-home-icon">
+                      <i class="fp fp-paw-circleline fp-size-2 fp-color-dark"></i>
+                    </div>
+
+                    <div class="box-home-icon">
+                      <i class="fp fp-padlock fp-size-2 fp-color-dark"></i>
+                    </div>
+
+                    <div class="box-home-icon">
+                      <i class="fp fp-padlock-line fp-size-2 fp-color-dark"></i>
+                    </div>
+
+                    <div class="box-home-icon">
+                      <i class="fp fp-circle fp-size-2 fp-color-dark"></i>
+                    </div>
+
+                    <div class="box-home-icon">
+                      <i class="fp fp-circle-line fp-size-2 fp-color-dark"></i>
+                    </div>
+
+                    <div class="box-home-icon">
+                      <i class="fp fp-circle-line-line fp-size-2 fp-color-dark"></i>
+                    </div>
+
+                    <div class="box-home-icon">
+                      <i class="fp fp-user fp-size-2 fp-color-dark"></i>
+                    </div>
+
+                    <div class="box-home-icon">
+                      <i class="fp fp-user-line fp-size-2 fp-color-dark"></i>
+                    </div>
+
+                    <div class="box-home-icon">
+                      <i class="fp fp-checked fp-size-2 fp-color-dark"></i>
+                    </div>
+
+
+                    <div class="box-home-icon">
+                     <i class="fp fp-arrow-box-left fp-size-2 dark"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-user fp-size-2 dark"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-user-line fp-size-2 dark"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-users-line fp-size-2 dark"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-users dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-sol-chuva fp-size-2 dark"></i>
+                   </div>
+
+
+
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-serrote dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-ink-roller dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-paintbrush dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-paintbrush-line dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-axes dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-axe dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-hammer dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-wrench dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-eye dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-eye-block dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-picture dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-block dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-mouse dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-mouse-line dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-padlock-line dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-gear dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-back-plate dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-money-br dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-coffee dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-coffee-line dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-vase dark fp-size-2"></i>
+                   </div>
+
+                   <div class="box-home-icon">
+                     <i class="fp fp-arrow-box-up dark fp-size-2"></i>
+                   </div>
+
+
+
+                   <div id="titulo1" class="mt-4 text-weight-bold" style="font-size: 18px;">Navegadores</a></div>
+
+                   <div class="box-home-icon">
+                    <i class="fp fp-chrome fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-firefox fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-edge fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-explorer fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-safari fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-opera fp-size-2 fp-color-dark"></i>
+                  </div>
+
+
+
+                  <div id="titulo2" class="mt-4 text-weight-bold">Sistemas Operacionais</a></div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-windows8 fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-ubuntu fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-linux fp-size-2 fp-color-dark"></i>
+                  </div>
+
+
+
+                  <div id="titulo2" class="mt-4 text-weight-bold">Redes</a></div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-facebook fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-facebook-box fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-facebook-box-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-facebook-circle fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-facebook-circle-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-twitter fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-twitter-box fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-twitter-box-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-twitter-circle-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-twitter-circle fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-instagram fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-instagram-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-youtube fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-youtube-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+
+
+                  <div id="titulo2" class="mt-5 text-weight-bold">TEXTOS</div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-align-center fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-align-justify fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-align-left fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-align-right fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-bold fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-font fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-header fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-ident fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-italic fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-list-ol fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-list-ul fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-list fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-outdent fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-paragraph fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-text-height fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-text-size fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-text-width fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-text fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-underline fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-quote-left fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-quote-right fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-sigma fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-ohm fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-code fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-key-code fp-lg fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-link fp-size-2 fp-lg fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-save fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-save-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-file-copy fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-file-new fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-file-music fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-file-image fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-file-written fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-file-list fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-printer fp-size-2 fp-color-dark"></i>
+                  </div>
+
+
+
+
+                  <div id="titulo2" class="mt-5 text-weight-bold">Player</div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-play fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-play-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-stop fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-stop-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-play-circle fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-play-circle-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-stop-circle fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-stop-circle-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-play-box fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-play-box-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-stop-box fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-stop-box-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-pause fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-pause-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-pause-circle fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-pause-circle-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-pause-box fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-pause-box-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-forward fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-forward-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-backward fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-backward-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-volume-down fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-volume-down-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-volume fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-volume-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-volume-up fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-volume-up-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-volume-mute fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-volume-mute-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-shuffle fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-shuffle-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-retweet fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-retweet-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-fast-forward fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-fast-forward-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-fast-backward fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-fast-backward-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-step-forward fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-step-forward-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-step-backward fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-step-backward-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-microphone fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-microphone-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-microphone-mute fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-microphone-line-mute fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-headphone fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-headphone-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-music-control fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-music-control-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-mineplayer fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-subtitle fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-reproduce-tv fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-fullscreen fp-size-2 fp-color-dark"></i>
+                  </div>
+
+
+
+
+                  <div id="titulo2" class="mt-5 text-weight-bold">SETAS</div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrow-right fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrow-right-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrow-left fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrow-left-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrow-up fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrow-up-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrow-down fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrow-down-line fp-size-2 fp-color-dark"></i>
+                  </div>
+                  
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-box-down fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-box-down-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-box-left fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-box-left-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-box-right fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-box-right-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-box-up fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-box-up-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-circle-down fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-circle-down-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-circle-left fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-circle-left-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-circle-right fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-circle-right-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-circle-up fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-circle-up-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-double-left fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-double-right fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-double-down fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-double-up fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-down fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-up fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-left fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-angle-right fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-down fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-down-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-left fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-left-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-right fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-right-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-up fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-up-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-box-down fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-box-down-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-box-left fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-box-left-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-box-right fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-box-right-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-box-up fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-box-up-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-circle-down fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-circle-down-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-circle-left fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-circle-left-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-circle-right fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-circle-right-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-circle-up fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-arrowb-circle-up-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+
+
+
+                  <div id="titulo2" class="mt-5 text-weight-bold">Ecommerce</div>
+
+
+
+                  <div class="box-home-icon">
+                   <i class="fp fp-cesta dark fp-size-2"></i>
+                 </div>
+
+                 <div class="box-home-icon">
+                   <i class="fp fp-cesta-line fp-size-2 dark"></i>
+                 </div>
+
+                 <div class="box-home-icon">
+                   <i class="fp fp-tag fp-size-2 dark "></i>
+                 </div>
+
+                 <div class="box-home-icon">
+                   <i class="fp fp-basket-addition fp-size-2 dark"></i>
+                 </div>
+
+                 <div class="box-home-icon">
+                   <i class="fp fp-basket-addition-line fp-size-2 dark "></i>
+                 </div>
+
+                 <div class="box-home-icon">
+                   <i class="fp fp-basket fp-size-2 dark"></i>
+                 </div>
+
+                 <div class="box-home-icon">
+                   <i class="fp fp-basket-line fp-size-2 dark "></i>
+                 </div>
+
+
+
+
+
+
+
+
+                 <div id="titulo2" class="mt-5 text-weight-bold">Smiles</div>
+
+                 <div class="box-home-icon">
+                  <i class="fp fp-pac fp-size-2 fp-color-dark"></i>
+                </div>
+
+                <div class="box-home-icon">
+                  <i class="fp fp-pac-line fp-size-2 fp-color-dark"></i>
+                </div>
+
+                <div class="box-home-icon">
+                  <i class="fp fp-ghostpac fp-size-2 fp-color-dark"></i>
+                </div>
+
+                <div class="box-home-icon">
+                  <i class="fp fp-ghostpac-line fp-size-2 fp-color-dark"></i>
+                </div>
+
+                <div class="box-home-icon">
+                 <i class="fp fp-smile-bad-line fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-bad fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-happy fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-happy-line fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-skull-line fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-skull fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-biggrin-line fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-biggrin fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-bravebad-line fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-bravebad fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-cool-line fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-cool fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-love-line fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-love fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-minusneutral-line fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-minusneutral fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-neutral-line fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-neutral fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-sad-line fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-sad fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-sick-line fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-sick fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-sleep-line fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-sleep fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-surprised-line fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-surprised fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-baby-line fp-color-dark fp-size-2"></i>
+               </div>
+
+               <div class="box-home-icon">
+                 <i class="fp fp-smile-baby fp-color-dark fp-size-2"></i>
+               </div>
+
+
+
+               <div id="titulo2" class="mt-5 text-weight-bold">Tempo</div>
+
+               <div class="box-home-icon">
+                <i class="fp fp-cloud fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-cloud-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-cloud-ray fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-cloud-ray-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+
+              <div class="box-home-icon">
+                <i class="fp fp-cloud-sun fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-cloud-sun-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+
+
+              <div class="box-home-icon">
+                <i class="fp fp-cloud-trickle fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-cloud-trickle-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-moon fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-moon-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-ray fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-ray-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-sun fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-sun-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-trickle fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-trickle-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+
+              <div class="box-home-icon">
+                <i class="fp fp-umbrella fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-umbrella-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+
+
+
+              <div id="titulo2" class="mt-5 text-weight-bold">Veiculos</div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-car fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-cyclist fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-bike fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-ambulance fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-ambulance-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-bus fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-bus-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-plane fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-plane-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-train fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-train-line fp- fp-size-2 fp-color-dark"></i>
+              </div>
+
+
+              <div id="titulo2" class="mt-5 text-weight-bold">Tecnologias</div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-html fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-html-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-css fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-css-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-java fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-python fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-react fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-ionic fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-nodejs fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-hibernate fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-tooncat fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-mysql fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-postgre fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-angular fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-firebird fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-bootstrap fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-git fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-github fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-github-op fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-bitbucket fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-xampp fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-wamp fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-glassfish fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-arduino fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-raspberry fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-android fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-ruby fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-sublimetext fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-php fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-laravel fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-perl fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-cmais fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-jenkins fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-zendframework fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-spring fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-magento fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-wordpress fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-joomla fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-opencart fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-woocommerce fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-dropbox fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-googledrive fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-onedrive fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-stackflow fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-devmedia fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-codepen fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-netbeans fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-intellij fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-delphi fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-hostgator fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-postman fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-astah fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-visualstudio fp-size-2 fp-color-dark"></i>
+              </div>
+
+
+
+
+              <div id="titulo2" class="mt-5 text-weight-bold">Web</a></div>
+
+              
+                  <div class="box-home-icon">
+                    <i class="fp fp-exclamation-circle fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-exclamation-circle-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-interrogation-circle fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-interrogation-circle-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-close-circle fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-close-circle-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-correct-circle fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-correct-circle-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-addition-circle fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-addition-circle-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-subtract-circle fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-subtract-circle-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-info-circle fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-info-circle-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-padunlocked fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-padunlocked-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-addition fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-addition-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-subtract fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-subtract-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-exclamation fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-exclamation-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-interrogation fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-interrogation-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-close fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-close-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-addition-box fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-addition-box-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-subtract-box fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-subtract-box-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-correct-box fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-correct-box-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-close-box fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-close-box-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-interrogation-box fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-interrogation-box-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-exclamation-box fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-exclamation-box-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-alert fp-size-2 fp-color-dark"></i>
+                  </div>
+
+                  <div class="box-home-icon">
+                    <i class="fp fp-alert-line fp-size-2 fp-color-dark"></i>
+                  </div>
+
+
+
+
+              <div id="titulo2" class="mt-5 text-weight-bold">Acessibilidade</a></div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-wheelchair fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-blind fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-universalacess fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-braille fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-cc fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-deaf fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-interpreting fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-language fp-size-2 fp-color-dark"></i>
+              </div>
+
+
+
+              <div id="titulo4" class="mt-4 text-weight-bold">Pagamentos</a></div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-visa fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-visa-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-barcode fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-barcode-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-diners fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-diners-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-discover fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-discover-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-master fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-master-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-amex fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-amex-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-paypal fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-paypal-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-paypalp fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-paypalp-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-itau fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-itau-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-bancodobrasil fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-bancodobrasil-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-bradesco fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-bradesco-line fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-caixa fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-banrisul fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-santander fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-bcash fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-moip fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-pagseguro fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-webmoney fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-paysafe fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-bitcoin fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-westernunion fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-mercadopago fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-hipercard fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-aura fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <div class="box-home-icon">
+                <i class="fp fp-elo fp-size-2 fp-color-dark"></i>
+              </div>
+
+              <section class="box-home-icon">
+                <a href=""><i class="fp fp-sicredi fp-size-2 fp-color-dark"></i></a>
+              </section>
+
+              <section class="box-home-icon">
+                <a href=""><i class="fp fp-sicoob fp-size-2 fp-color-dark" title="Tooltip on left"></i></a>
+              </section>
+            </div>
+
+
+
+
+
+
+          </div>
+
+
+
+          <a class="bg-fp-color-fp-color-dark rounded" id="subirTopo">
+            ^ <br> subir
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
+    
+
+    <script>
+
+        function myFunction() {
+       
+
+          var input, filter, id, div, a, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          id = document.getElementById("todosIcones");
+          div = id.getElementsByTagName("section");
+          for (i = 0; i < div.length; i++) {
+            a = div[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+              div[i].style.display = "";
+            }
+            else {
+              div[i].style.display = "none";
+            }
+
+
+          }
+        }
+      </script>
+
+   <!--  <script type="text/javascript">
+    $("#search").on("keyup", function() {
+    var value = $(this).val();
+
+    $("#todosIcones .box-home-icon").each(function(index) {
+        if (index !== 0) {
+
+            $row = $(this);
+
+            var id = $row.find("i").text();
+
+            if (id.indexOf(value) !== 0) {
+                $row.hide();
+            }
+            else {
+                $row.show();
+            }
+        }
+    });
+});
+  </script> -->
+
+    <script type="text/javascript">
+      jQuery(document).ready(function () {
+
+        jQuery("#subirTopo").hide();
+
+        jQuery('a#subirTopo').click(function () {
+          jQuery('body,html').animate({
+            scrollTop: 0
+          }, 100);
+          return false;
+        });
+
+        jQuery(window).scroll(function () {
+          if (jQuery(this).scrollTop() > 300) {
+            jQuery('#subirTopo').fadeIn();
+          } else {
+            jQuery('#subirTopo').fadeOut();
+          }
+        });
+      });
+    </script>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+  </html>
