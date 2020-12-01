@@ -1,8 +1,8 @@
 /*
 ---------------------------------------------------
--------- FontPac Icons version 1.0 -------------------
+-------- FP Icons version 1.0 -------------------
 ----------- Michel Robaskiewicz -------------------
---------- https://fontpac.github.io ---------------
+--------- https://robaskiewicz.github.io/fp/ ---------------
 ----------twitter: @_robaskiewicz -----------------
 ---------------------------------------------------
  */
@@ -16,14 +16,12 @@
 }
 
 
-[class^="fp-"],
-[class*=" fp-"] {
-	display: inline-block;
-	font: normal 14px/1 Fontpac;
-	font-size: inherit;
-	text-rendering: auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale
+
+.fp {
+    display: inline-block;
+    font: normal 14px/1 Fontpac;
+    font-size: inherit;
+    text-rendering: auto;
 }
 
 
@@ -315,11 +313,11 @@
 
 
 @keyframes animatetop{
-	from{
+	from{ /*de*/
 		top:-300px;
 		opacity:0
 	}
-	to{
+	to{ /*para*/
 		top:0;
 		opacity:1
 	}
@@ -500,7 +498,6 @@
 
 .fp-alternate{
 	-webkit-animation-direction: alternate;
-
 }
 
 /****************************/
@@ -533,6 +530,7 @@
 	border:solid .08em #eee;
 	border-radius:.1em
 }
+
 .fp-pull-left{
 	float:left
 }
